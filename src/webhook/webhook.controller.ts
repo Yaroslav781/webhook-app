@@ -1,4 +1,3 @@
-/* eslint-disable prefer-const */
 import { Controller, Body } from '@nestjs/common';
 import { RowService } from '../row/row.service';
 import { WebsocketGateway } from 'src/websocket.gateway';
@@ -14,9 +13,7 @@ export class WebhookController {
     try {
       const { value } = data;
 
-      let newRow;
-
-      newRow = await this.rowService.createRow(value);
+      const newRow = await this.rowService.createRow(value);
 
       this.websocketGateway.sendUpdate(newRow);
 
