@@ -29,12 +29,14 @@
     "@nestjs/typeorm": "^10.0.2",
     "@nestjs/websockets": "^10.4.4",
     "dotenv": "^16.4.5",
+    "googleapis": "^144.0.0",
     "pg": "^8.13.0",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
     "sendgrid": "^5.2.3",
     "swagger-ui-express": "^5.0.1",
-    "typeorm": "^0.3.20"
+    "typeorm": "^0.3.20",
+    "ws": "^8.18.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
