@@ -8,5 +8,6 @@ import { RowController } from './row.controller';
   imports: [TypeOrmModule.forFeature([RowEntity])],
   providers: [RowService],
   controllers: [RowController],
+  exports: [RowService],
 })
 export class RowModule {}
